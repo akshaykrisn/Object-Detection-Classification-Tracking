@@ -18,8 +18,15 @@ def main():
         text_scale=0.5
     )
 
-    model = YOLO("yolov8l.pt")
-    for result in model.track(source=0, show=True, stream=True, agnostic_nms=True):
+    # Model size ranging from small to big in that ascending order
+    model = YOLO("yolov8n.pt")
+    # model = YOLO("yolov8s.pt")
+    # model = YOLO("yolov8m.pt")
+    # model = YOLO("yolov8l.pt")
+    # model = YOLO("yolov8x.pt")
+
+    webCamSource = 0 #1 For Logitech 720P
+    for result in model.track(source=webCamSource, show=True, stream=True, agnostic_nms=True):
         
         frame = result.orig_img
         detections = sv.Detections.from_yolov8(result)
