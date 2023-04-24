@@ -4,7 +4,7 @@
 
 ```bash
 # create python virtual environment
-python3 -m venv venv
+python -m venv venv
 
 # install dependencies
 pip install -r requirements.txt
@@ -13,7 +13,7 @@ pip install -r requirements.txt
 ## Execute
 
 ```bash
-python3 -m main
+python -m main
 ```
 
 ## Algorithm 
