@@ -16,6 +16,8 @@ pip install -r requirements.txt
 python -m main
 ```
 
+![](https://github.com/akshaykrisn/Object-Detection-Classification-Tracking/blob/main/assets/ss1.jpg)
+
 ## Algorithm 
 
 
