@@ -18,7 +18,7 @@ python3 -m main
 
 ## Algorithm 
 
-```bash
+
 Imports the necessary libraries - cv2 for video streaming and numpy for numerical computation. It also imports the YOLO class from the ultralytics library for object detection and the supervision library for annotating the detected objects and counting the number of objects that cross a specified line.
 
 Defines two points LINE_START and LINE_END that represent the start and end points of a line that will be used to count the number of objects that cross it.
@@ -42,4 +42,3 @@ The line counter is triggered with the current detections, and the line is annot
 The annotated video stream is displayed using the cv2.imshow function.
 
 The loop continues until the user presses the ESC key, at which point the program exits.
-```
