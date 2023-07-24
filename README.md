@@ -28,6 +28,7 @@ python -m main
 * Defines three annotators - line_counter which counts the number of objects that cross the line, line_annotator which annotates the line on the video stream, and box_annotator which annotates the detected objects with boxes and labels.
 
 * Creates an instance of the YOLO model using the yolov8l.pt weights file.
+//take this file based on your system capacity.
 
 * Starts an infinite loop to process frames from the video stream. For each frame, the YOLO model is used to detect objects, and the resulting detections are converted to supervision format.
 
